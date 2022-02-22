@@ -42,7 +42,7 @@ We would be using a tool called [Hardhat](https://hardhat.org/). This would crea
 
   You would been presented with a prompt something like this
 
-  ![](./images/blog/hardhat-prompt.png)
+  ![](https://imgur.com/uiEFO9U.png)
 
   Let's choose the first option and press enter for the rest of the options
 
@@ -66,7 +66,7 @@ We would be using a tool called [Hardhat](https://hardhat.org/). This would crea
 
 After you have completed setting up the developer environment you would see a folder structure similar to this
 
-![](./images/blog/folder-structure.png)
+![](https://imgur.com/A0vtJBO.png)
 
 - `contracts` is the folder where all our smart contracts would be stored.
 - `scripts` is the folder where all scripts such as `run.js` and `deploy.js` would be stored.
@@ -88,7 +88,7 @@ Let's get started by adding a ✨SPDX License Identifier✨. It's just a fancy c
 
 Let's now specify the the version of solidity compiler. As we are using Hardhat, we have to check that the solidity compiler version in `hardhat.config.js` file is same as we are specifying in our smart contract
 
-![](./images/blog/solidity-compiler-version.PNG)
+![](https://imgur.com/NpxKuG4.png)
 
 ```solidity
 pragma solidity ^0.8.4;
@@ -102,7 +102,7 @@ import "hardhat/console.sol"
 
 Now we have the superpowers to use console log in solidity. This makes debugging much more simpler.
 
-![](./images/blog/console-log-meme.png)
+![](https://imgur.com/jxQdvKZ.png)
 
 Let's now start writing the actual smart contract 👀. In solidity the syntax of smart contract is similar to classes in other programming languages.
 
@@ -197,7 +197,7 @@ Now let's run it using `npx hardhat run scripts/run.js` command
 
 You would see the output something like this
 
-![](./images/blog/deploying-contract.PNG)
+![](https://imgur.com/XjP2Dlx.png)
 
 **TADA** 🎉! You have created a smart contract and deployed it as well
 
@@ -268,7 +268,7 @@ Let's now talk a look at the array operation in solidity 👀
 
    **TADA** 🎉! It worked
 
-   ![](./images/blog/accessing-array-elements.PNG)
+   ![](https://imgur.com/BJAdYkw.png)
 
 2. **Assigning values**: Let's now assign values to an array
 
@@ -295,7 +295,7 @@ Let's now talk a look at the array operation in solidity 👀
 
    **TADA** 🎉! It worked
 
-   ![](./images/blog/assigning-array-elements.PNG)
+   ![](https://imgur.com/wkZ2QJO.png)
 
 3. **Length of an array**: Let's now find the length of an array.
 
@@ -321,7 +321,7 @@ Let's now talk a look at the array operation in solidity 👀
 
    **TADA** 🎉 It worked
 
-   ![](./images/blog/array-length.PNG)
+   ![](https://imgur.com/8zp2weM.png)
 
 4. **Push**: Push is used to add elements to the end of an dynamic array.
 
