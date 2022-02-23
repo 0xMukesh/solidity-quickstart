@@ -1,18 +1,18 @@
-Hey folks 👀. Hope y'all are doing great. You might have heard about web3 and it's hype on twitter and maybe you wanna explore it as well. Well so today I am here to give all a quick tour of solidity 🚀. So let's get started.
+Hey folks 👀. Hope y'all are doing great. You might have heard about web3 and its hype on Twitter and maybe you wanna explore it as well. Well, so today I am here to give all a quick tour of solidity 🚀. So let's get started.
 
-**NOTE**: This blog post isn't a complete tutorial of solidity. You can take this blog post as a quickstart for journey with solidity and web3
+**NOTE**: This blog post isn't a complete tutorial of solidity. You can take this blog post as a quickstart for the journey with solidity and web3. If you are in search of resources, checkout the resources notion page of X Days of Solidity: https://links.kiradev.co/misc/solidity-resources
 
 ![](https://c.tenor.com/Q8VheZPaZM4AAAAM/stocks-amc.gif)
 
-# 🤔 What's Solidity ?
+# 🤔 What's Solidity?
 
 Solidity is a programming language for implementing smart contracts.
 
-Smart contracts are simply programs stored on a blockchain that run when predetermined conditions are met. An advantage of these programs, is that you can verify they are what they are and do what they claim they are doing. This allows for a permission-less autonomous ecosystem between untrusted and anonymous stakeholders.
+Smart contracts are simply programs stored on a blockchain that run when predetermined conditions are met. An advantage of these programs is that you can verify they are what they are and do what they claim they are doing. This allows for a permission-less autonomous ecosystem between untrusted and anonymous stakeholders.
 
-Solidity is a curly-bracket language with influence of C++, Python and JavaScript been clearly visible.
+Solidity is a curly-bracket language with the influence of C++, Python, and JavaScript being visible.
 
-Enough of theory, now let's actually dive into solidity 🚀
+Enough of theory, now let's dive into solidity 🚀
 
 # 🛠 Setting up developer environment
 
@@ -20,7 +20,7 @@ Before working with Solidity, we would have to set up our development environmen
 
 ## 👀 Magical powers of Hardhat
 
-We would be using a tool called [Hardhat](https://hardhat.org/). This would create a local Ethereum network and give us fake test ETH and fake test accounts to work with. Sounds interesting right ? So what are you waiting so let’s set up hardhat 🚀.
+We would be using a tool called [Hardhat](https://hardhat.org/). This would create a local Ethereum network and give us fake test ETH and fake test accounts to work with. Sounds interesting right? So what are you waiting for so let’s set up Hardhat 🚀.
 
 - Create a new folder for the project
   ```bash
@@ -40,13 +40,13 @@ We would be using a tool called [Hardhat](https://hardhat.org/). This would crea
    npx hardhat
   ```
 
-  You would been presented with a prompt something like this
+  You would be presented with a prompt something like this
 
   ![](https://imgur.com/uiEFO9U.png)
 
   Let's choose the first option and press enter for the rest of the options
 
-- We would have to install few other dependencies as well
+- We would have to install a few other dependencies as well
 
   ```bash
   npm install --save-dev chai ethereum-waffle @nomiclabs/hardhat-waffle ethers @nomiclabs/hardhat-ethers
@@ -74,11 +74,11 @@ After you have completed setting up the developer environment you would see a fo
 
 # 👋 Hello, World!
 
-Let's get started by creating a smart contract using solidity which prints "Hello, World!" in the terminal
+Let's get started by creating a smart contract using solidity that prints "Hello, World!" in the terminal
 
 ![](https://c.tenor.com/cX92mi1p-NYAAAAd/coding-anime.gif)
 
-First of all let's clean up the default hardhat contract, script and test files. Let's create a new file called `HelloWorld.sol` inside the `contracts` folder.
+First of all let's clean up the default hardhat contract, script, and test files. Let's create a new file called `HelloWorld.sol` inside the `contracts` folder.
 
 Let's get started by adding a ✨SPDX License Identifier✨. It's just a fancy comment, which tells the license of your smart contract. In my case, I am going to be using the [MIT](https://opensource.org/licenses/MIT) license.
 
@@ -86,7 +86,7 @@ Let's get started by adding a ✨SPDX License Identifier✨. It's just a fancy c
 // SPDX-License-Identifier: MIT
 ```
 
-Let's now specify the the version of solidity compiler. As we are using Hardhat, we have to check that the solidity compiler version in `hardhat.config.js` file is same as we are specifying in our smart contract
+Let's now specify the the version of solidity compiler. As we are using Hardhat, we have to check that the solidity compiler version in the `hardhat.config.js` file is the same as we are specifying in our smart contract
 
 ![](https://imgur.com/NpxKuG4.png)
 
@@ -100,11 +100,11 @@ As solidity doesn't natively support "console logs" we would have to use the mag
 import "hardhat/console.sol"
 ```
 
-Now we have the superpowers to use console log in solidity. This makes debugging much more simpler.
+Now we have the superpowers to use console log in solidity. This makes debugging much simpler.
 
 ![](https://imgur.com/jxQdvKZ.png)
 
-Let's now start writing the actual smart contract 👀. In solidity the syntax of smart contract is similar to classes in other programming languages.
+Let's now start writing the actual smart contract 👀. In solidity, the syntax of a smart contract is similar to classes in other programming languages.
 
 ```solidity
 contract HelloWorld {
@@ -116,7 +116,7 @@ contract HelloWorld {
 
 We use the `contract` keyword along with the contract name to define a contract. Defining a contract is similar to defining a class in other programming languages like JavaScript.
 
-Any code inside the `constructor` is ran once, when the contract is been deployed.
+Any code inside the `constructor` is run once when the contract is been deployed.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -132,15 +132,15 @@ contract HelloWorld {
 }
 ```
 
-**TADA** 🎉! We have wrote our first smart contract. But 🤔 How to run it locally ?
+**TADA** 🎉! We have written our first smart contract. But 🤔 How to run it locally?
 
 # ⚙ Running smart contract locally
 
 We would use creating a script (`run.js`) and run the smart contract using that script and Hardhat.
 
-Create a new file called `run.js` under `scripts` folder.
+Create a new file called `run.js` under the `scripts` folder.
 
-Let's first gets our smart contract, compiles it and generates all the necessary files under the `artifact` folder.
+Let's first get our smart contract, compile it, and generate all the necessary files under the `artifact` folder.
 
 > `artifact` folder is similar to a `build` folder
 
@@ -160,7 +160,7 @@ We will wait until our smart contract has been officially deployed on the local 
 await waveContract.deployed();
 ```
 
-We would only see the "Hello, World!" console log only after the smart contract has been officially deployed on the local blockchain, because the code inside `constructor` only runs once when the smart contract has been deployed.
+We would only see the "Hello, World!" console log only after the smart contract has been officially deployed on the local blockchain because the code inside `constructor` only runs once when the smart contract has been deployed.
 
 Let's add a console log to the run script which tells the address of the account where our smart contract has been deployed.
 
@@ -168,7 +168,7 @@ Let's add a console log to the run script which tells the address of the account
 console.log('Contract deployed to:', helloWorld.address);
 ```
 
-Finally our `run.js` script would look something like this
+Finally, our `run.js` script would look something like this
 
 ```js
 const main = async () => {
@@ -191,7 +191,7 @@ const runMain = async () => {
 runMain();
 ```
 
-I have added a new `runMain` function which would catch errors while deploying
+I have added a new `runMain` function that would catch errors while deploying
 
 Now let's run it using `npx hardhat run scripts/run.js` command
 
@@ -218,7 +218,7 @@ In solidity, there are two types of integers unsigned integers (`uint`) and sign
 
 ## 📍 Address
 
-There is a special data types, "Address". Address is a 20 byte long (size of an ethereum wallet address) data type in solidity.
+There is a special data type, "Address". Address is a 20 byte long (size of an ethereum wallet address) data type in solidity.
 
 ## 🏹 Array
 
@@ -234,7 +234,7 @@ In solidity, you can create a fixed (with only a specific length) and dynamic (t
 // An array of fixed length of 10 unassigned integers
 uint[10] myFixedArray;
 
-// An array of dynamic length of strings
+// An array of the dynamic length of strings
 string[] myDynamicArray;
 ```
 
@@ -260,11 +260,11 @@ Let's now talk a look at the array operation in solidity 👀
     }
    ```
 
-   Here are are creating a fixed array of name `data` and data type `string` and length of 3. We are trying to console log the second element of the array, which is `hello`.
+   Here are creating a fixed array of name `data` and data type `string` and length of 3. We are trying to console log the second element of the array, which is `hello`.
 
    Let's try to run it now using `npx hardhat scripts/run.js`
 
-   **NOTE**: You need to change the name of the smart contract which you are compiling in `scripts/run.js` file.
+   **NOTE**: You need to change the name of the smart contract which you are compiling in the `scripts/run.js` file.
 
    **TADA** 🎉! It worked
 
@@ -302,7 +302,7 @@ Let's now talk a look at the array operation in solidity 👀
    You can use the `length` method to get the length of an array. Similar to how to find the length of an array in JavaScript.
 
    ```solidity
-   // SPDX-License-Identifier: MIT
+    // SPDX-License-Identifier: MIT
 
     pragma solidity ^0.8.0;
 
@@ -323,7 +323,7 @@ Let's now talk a look at the array operation in solidity 👀
 
    ![](https://imgur.com/8zp2weM.png)
 
-4. **Push**: Push is used to add elements to the end of an dynamic array.
+4. **Push**: Push is used to add elements to the end of a dynamic array.
 
    ```solidity
     // SPDX-License-Identifier: MIT
@@ -344,32 +344,32 @@ Let's now talk a look at the array operation in solidity 👀
 5. **Pop**: Pop is used to remove the last element from a dynamic array
 
    ```solidity
-   // SPDX-License-Identifier: MIT
+    // SPDX-License-Identifier: MIT
 
-   pragma solidity ^0.8.0;
+    pragma solidity ^0.8.0;
 
-   import "hardhat/console.sol";
+    import "hardhat/console.sol";
 
-   contract AddingElement {
-       string[] data = ["hi", "hello", "yo"];
+    contract AddingElement {
+        string[] data = ["hi", "hello", "yo"];
 
-       constructor() {
-           data.pop();
-       }
-   }
+        constructor() {
+            data.pop();
+        }
+    }
    ```
 
-Phew that was really long 😓
+Phew, that was long 😓
 
 ## 🗜 Structs
 
-Structs are more complex data type, where you can combine multiple data types to create your own complex data type.
+Structs are more complex data types, where you can combine multiple data types to create your own complex data type.
 
 ```solidity
 struct myStruct = {
-	address myAddress;
-	uint myNumber;
-	string myName
+  address myAddress;
+  uint myNumber;
+  string myName
 }
 ```
 
@@ -377,8 +377,8 @@ We can use structs with arrays too!
 
 ```solidity
 struct Person = {
-	string name;
-	uint age
+  string name;
+  uint age
 }
 
 Person[] personArray; // Creates a dynamic array
@@ -400,20 +400,20 @@ personArray.push(james); // Adds that new person to the `personArray` array
 
 In solidity, there are 3 different types of variables:
 
-1. `state`: State variables are declared in contract scope. Stored on block chain.
-2. `local`: Local variables are declared inside functions. Destroyed after execution and not stored on block chain.
-3. `global`: Global variables are some special variables that can be used globally and give information about the transactions and block chain properties.
+1. `state`: State variables are declared in contract scope. Stored on the blockchain.
+2. `local`: Local variables are declared inside functions. Destroyed after execution and not stored on the blockchain.
+3. `global`: Global variables are some special variables that can be used globally and give information about the transactions and blockchain properties.
 
 ## ✨ Variable modifiers
 
 There are 2 variable modifiers for `state` variables
 
-- `constant`, disallows assignment (except initialization), does not occupy storage slot.
-- `immutable`, allows exactly one assignment at construction time and is constant afterwards. Is stored in code.
+- `constant`, disallow assignment (except initialization), does not occupy storage slot.
+- `immutable`, allows exactly one assignment at construction time and is constant afterward. Is stored in code.
 
 # 👋 The End
 
-That's the end folks 👋. I would be releasing another part on "Solidity Quickstart" on functions and how to deploy the smart contract to a testnet, such as [Rinkeby](https://www.rinkeby.io/)
+That's the end folks 👋. I would be releasing another part on "Solidity Quickstart" on "Functions in Solidity" and "How to deploy the smart contract to a test net", such as [Rinkeby](https://www.rinkeby.io/)
 
 The code for this entire "Solidity Quickstart" series would be available on my GitHub:
 
