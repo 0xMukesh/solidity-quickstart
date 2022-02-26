@@ -13,5 +13,5 @@
   - [ ] Array operations
 - [ ] Structs
 - [ ] Structs and arrays
-      [ ] Variables
-      [ ] Functions
+- [ ] Variables
+- [ ] Functions
