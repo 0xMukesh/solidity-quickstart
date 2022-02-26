@@ -1,0 +1,12 @@
+name: Congrats on completing the challenge 🎉
+
+on:
+  issues:
+    types: ["submission"]
+
+jobs:
+  congrats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ../../src/packages/github-action/
