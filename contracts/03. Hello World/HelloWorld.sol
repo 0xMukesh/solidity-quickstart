@@ -9,3 +9,7 @@ contract HelloWorld {
         console.log("Hello, World");
     }
 }
+
+// Challenge
+
+// Create a new smart contract called GmWagmi.sol and console log "gm wagmi!"
