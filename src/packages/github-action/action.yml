@@ -1,0 +1,15 @@
+name: "Congrats 🎉"
+description: "Congrats someone on completing the challenge"
+inputs:
+    GITHUB_TOKEN:
+        description: "GitHub token"
+        required: true
+    who-to-congratulation:
+        description: "Who to congratulation"
+        required: true
+    number-of-submission:
+        description: "Total number of submissions done by that user"
+        required: true
+runs:
+    using: "node16"
+    main: "dist/index.js"
