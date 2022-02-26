@@ -1,15 +1,16 @@
-name: "Congrats 🎉"
-description: "Congrats someone on completing the challenge"
+name: congrats
+description: Congrats someone on completing the challenge
+author: Kira272921
 inputs:
-    GITHUB_TOKEN:
-        description: "GitHub token"
-        required: true
-    who-to-congratulation:
-        description: "Who to congratulation"
-        required: true
-    number-of-submission:
-        description: "Total number of submissions done by that user"
-        required: true
+  GITHUB_TOKEN:
+    description: "GitHub token"
+    required: true
+  label:
+    description: Name of the label
+    required: true
 runs:
-    using: "node16"
-    main: "dist/index.js"
+  using: "node16"
+  main: "dist/index.js"
+branding:
+  icon: anchor
+  color: green
