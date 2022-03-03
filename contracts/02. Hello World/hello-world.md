@@ -1,12 +1,12 @@
-# Hello, World!
+# 👋 Hello, World!
 
-## Creating a Project
+## 🎉 Creating a Project
 
 Get started by creating a new project, by using `npx hardhat` command.
 
 ![](https://imgur.com/MaXqkVq.png)
 
-## Writing the Smart Contract
+## 💻 Writing the Smart Contract
 
 Go ahead and choose "Create a basic sample project" and press enter for the rest of the options.
 
@@ -70,7 +70,7 @@ contract HelloWorld {
 }
 ```
 
-## Running the smart contract locally
+## ⚙ Running the smart contract locally
 
 So we have completed writing the smart contract, but how would be even test it ? 🤔
 
@@ -123,6 +123,10 @@ npx hardhat run scripts/run.js
 
 **TADA** 🎉! Congrats on writing and deploying your first ever smart contract
 
-# Challenge
+# 🔗 Important links
+
+- Example solidity file for this section: [`HelloWorld.sol`](https://github.com/Kira272921/solidity-quickstart/blob/main/contracts/02.%20Hello%20World/HelloWorld.sol)
+
+# 💪 Challenge
 
 Create a smart contract which would console log `gm, wagmi` in the terminal. Take a screenshot of the output and submit it by using our discord bot's `-submit` command
