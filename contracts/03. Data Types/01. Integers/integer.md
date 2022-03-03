@@ -4,12 +4,12 @@ In solidity, there are two types of integers unsigned integers (`uint`) and sign
 
 > PS: `**` means to the "to the power of" aka `^` operator.
 
--   `uint8` ranges from 0 to 2 \*\* 8 - 1
--   `uint16` ranges from 0 to 2 \*\* 16 - 1
--   `uint256` or `uint` ranges from 0 to 2 \*\* 256 - 1
--   `int8` ranges from -2 ** 8 to 2 ** 8 - 1
--   `int16` ranges from -2 ** 16 to 2 ** 16 - 1
--   `int256` or `int256` ranges from -2 ** 256 to 2 ** 256 - 1
+- `uint8` ranges from 0 to 2 \*\* 8 - 1
+- `uint16` ranges from 0 to 2 \*\* 16 - 1
+- `uint256` or `uint` ranges from 0 to 2 \*\* 256 - 1
+- `int8` ranges from -2 ** 8 to 2 ** 8 - 1
+- `int16` ranges from -2 ** 16 to 2 ** 16 - 1
+- `int256` or `int256` ranges from -2 ** 256 to 2 ** 256 - 1
 
 Let's create a new contract named `Integer.sol` under the `contracts` folder.
 
@@ -67,9 +67,14 @@ contract Integer {
 
 ### Mathematical Operators
 
-| Operator | Description |
-| -------- | ----------- |
-| +        | Addition    |
+| Operator | Description         |
+| -------- | ------------------- |
+| +        | Addition            |
+| -        | Subtraction         |
+| \*       | Multiplication      |
+| /        | Division            |
+| \*\*     | Exponential         |
+| %        | Modulo (or) Modulus |
 
 You could basic mathematical operations such as addition, subtraction, multiplication, exponentiation, division in solidity.
 
@@ -120,3 +125,16 @@ Let's test it out by using the `npx hardhat run scripts/run.js`.
 > I have choose `htrun` as the command name, you can any name which is comfortable for you.
 >
 > Now we can test it by using `npm <your-command-name>`, so in my case it would be `npm htrun`
+
+![](https://imgur.com/cySwGQJ.png)
+
+### Comparison Operators
+
+| Operator | Description              |
+| -------- | ------------------------ |
+| ==       | Equality                 |
+| !=       | Not equal                |
+| <=       | Less than or equal to    |
+| >=       | Greater than or equal to |
+| <        | Less than                |
+| >        | Greater than             |

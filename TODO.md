@@ -2,16 +2,17 @@
 
 ### Content
 
-- [ ] Basics of Solidity
+- [x] Setting up developer environment
+- [x] Hello World
 - [ ] Data Types
-- [ ] Integers
-  - [x] Math operators
-  - [x] Comparision operators
-  - [x] Bit wise operators
-- [ ] Address
-- [ ] Arrays
-  - [ ] Array operations
-- [ ] Structs
-- [ ] Structs and arrays
+  - [ ] Integers
+    - [ ] Math operators
+    - [ ] Comparison operators
+    - [ ] Bit wise operators
+  - [ ] Address
+  - [ ] Arrays
+    - [ ] Array operations
+  - [ ] Structs
+  - [ ] Structs and arrays
 - [ ] Variables
 - [ ] Functions
