@@ -76,7 +76,7 @@ So we have completed writing the smart contract, but how would be even test it ?
 
 To locally run our smart contract we would use Hardhat 🚀. We would be creating a `run.js` script and use that to locally run our script
 
-### Creating a run script
+### 🏃‍♂️ Creating a run script
 
 Go ahead a create a `run.js` file under the `scripts` folder and add the following code.
 

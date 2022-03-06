@@ -1,0 +1,20 @@
+{
+  "name": "x-days-of-solidity-bot",
+  "version": "0.0.1",
+  "main": "src/bot.js",
+  "author": "Kira272921",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/bot.js",
+    "dev": "nodemon src/bot.js"
+  },
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0",
+    "mongoose": "^6.2.4",
+    "web3": "^1.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

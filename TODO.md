@@ -6,8 +6,8 @@
 - [x] Hello World
 - [ ] Data Types
   - [ ] Integers
-    - [ ] Math operators
-    - [ ] Comparison operators
+    - [x] Math operators
+    - [x] Comparison operators
     - [ ] Bit wise operators
   - [ ] Address
   - [ ] Arrays

@@ -21,7 +21,7 @@ contract Integer {
         console.log("Exponential: %d", integerA**integerB); // Exponential
         console.log("Modulus: %d", integerA % integerB); // Modolu
 
-        // // Comparisons Operator
+        // Comparisons Operator
 
         console.log("Equality: %s", integerA == integerB); // Equality
         console.log("Not equal: %s", integerA != integerB); // Not equal
@@ -29,7 +29,5 @@ contract Integer {
         console.log("Greater than or equal to: %s", integerA >= integerB); // Greater than or equal to
         console.log("Less than: %s", integerA < integerB); // Less than
         console.log("Greater than: %s", integerA > integerB); // Greater than
-
-        // Bit Operators
     }
 }
