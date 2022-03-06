@@ -24,3 +24,8 @@ All the guides are present in the [`contracts`](https://github.com/Kira272921/so
 ## 🙌 Show your support
 
 Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2022 [Kira](https://github.com/kira272921).
+This project is [MIT](https://github.com/Kira272921/solidity-quickstart/blob/main/LICENSE) licensed.
