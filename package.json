@@ -12,6 +12,8 @@
     "hardhat": "^2.8.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "^16.2.1",
+    "@commitlint/config-conventional": "^16.2.1",
     "@nomiclabs/hardhat-ethers": "^2.0.5",
     "@nomiclabs/hardhat-waffle": "^2.0.2",
     "chai": "^4.3.6",
