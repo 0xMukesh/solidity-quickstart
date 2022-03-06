@@ -1,5 +1,5 @@
 ---
-name: "\U0001F4DD Guide request"
+name: "Guide request"
 about: Suggest a new guide idea for this project
 title: "[GUIDE]"
 labels: guide
