@@ -1,4 +1,4 @@
-const constants = require('../data/constants.data.js')
+const constants = require("../data/constants.data.js");
 
 const PREFIX = constants["prefix"];
 

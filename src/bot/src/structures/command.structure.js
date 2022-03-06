@@ -5,7 +5,7 @@
  * @param {Client} client
  */
 
-function RunFunction(msg, args, client) { }
+function RunFunction(msg, args, client) {}
 
 class Command {
   name;

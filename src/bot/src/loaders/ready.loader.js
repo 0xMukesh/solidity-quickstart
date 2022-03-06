@@ -1,7 +1,7 @@
-const fs = require('fs')
+const fs = require("fs");
 
-const mongo = require('./mongo.loader.js')
-const constants = require('../data/constants.data.js')
+const mongo = require("./mongo.loader.js");
+const constants = require("../data/constants.data.js");
 
 module.exports = (client) => {
   client.on("ready", async () => {
@@ -12,12 +12,12 @@ module.exports = (client) => {
     console.log(`${client.user.username} is online`);
   });
 
-  mongo(process.env.MONGODB_URL)
+  mongo(process.env.MONGODB_URL);
 
   fs.readdirSync(constants["commandDirectory"])
     .filter((file) => file.endsWith(".js"))
     .forEach((file) => {
-      const command = require(`../commands/${file}`)
+      const command = require(`../commands/${file}`);
       console.log(`Command ${command.name} loaded!`);
       client.commands?.set(command.name, command);
       command.aliases.forEach((alias) => {

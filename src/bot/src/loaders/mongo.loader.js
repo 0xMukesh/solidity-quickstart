@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
 function mongo(url) {
   mongoose
@@ -11,4 +11,4 @@ function mongo(url) {
     });
 }
 
-module.exports = mongo
+module.exports = mongo;

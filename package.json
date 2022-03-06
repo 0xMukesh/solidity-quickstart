@@ -1,10 +1,11 @@
 {
   "name": "solidity-quickstart",
   "version": "0.0.1",
-  "main": "index.js",
   "author": "Kira272921",
   "license": "MIT",
   "scripts": {
+    "format": "prettier --write .",
+    "precommit": "yarn format && git add -A .",
     "htrun": "npx hardhat run scripts/run.js"
   },
   "dependencies": {
@@ -15,6 +16,8 @@
     "@nomiclabs/hardhat-waffle": "^2.0.2",
     "chai": "^4.3.6",
     "ethereum-waffle": "^3.4.0",
-    "ethers": "^5.5.4"
+    "ethers": "^5.5.4",
+    "husky": "^7.0.4",
+    "prettier": "^2.5.1"
   }
 }

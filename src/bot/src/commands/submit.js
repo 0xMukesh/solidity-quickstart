@@ -1,11 +1,11 @@
-const Discord = require('discord.js')
+const Discord = require("discord.js");
 
-const Command = require('../structures/command.structure.js')
-const User = require('../models/user.model.js')
-const attachIsImage = require('../lib/attachIsImage.js')
-const constants = require('../data/constants.data.js')
-const theme = require('../data/theme.data.js')
-const emoji = require('../data/emoji.data.js')
+const Command = require("../structures/command.structure.js");
+const User = require("../models/user.model.js");
+const attachIsImage = require("../lib/attachIsImage.js");
+const constants = require("../data/constants.data.js");
+const theme = require("../data/theme.data.js");
+const emoji = require("../data/emoji.data.js");
 
 module.exports = new Command({
   name: "submit",
@@ -35,46 +35,54 @@ module.exports = new Command({
                   if (err) {
                     const embed = new Discord.MessageEmbed()
                       .setColor(theme["error"])
-                      .setDescription(`${emoji["sadge"]} Oh no.. We are facing some error.\n\`\`\`${err}\`\`\``)
-                    msg.reply({ embeds: [embed] })
+                      .setDescription(
+                        `${emoji["sadge"]} Oh no.. We are facing some error.\n\`\`\`${err}\`\`\``
+                      );
+                    msg.reply({ embeds: [embed] });
                   } else {
                     const embed = new Discord.MessageEmbed()
                       .setColor(theme["success"])
-                      .setDescription(`${emoji["swag"]} Congrats on completing the challenge. Here's 1 xsol for you for completing the challenge ${emoji["pog"]}`)
-                    msg.reply({ embeds: [embed] })
+                      .setDescription(
+                        `${emoji["swag"]} Congrats on completing the challenge. Here's 1 xsol for you for completing the challenge ${emoji["pog"]}`
+                      );
+                    msg.reply({ embeds: [embed] });
                   }
                 }
               );
-            }
-            else {
+            } else {
               // As the user isn't their in the database, this means that he hasn't configured his/her wallet address.
 
               const embed = new Discord.MessageEmbed()
                 .setColor(theme["error"])
-                .setDescription(`${emoji["sadge"]} We are trying to send you some xsol but we couldn't find your Ethereum wallet address. Run \`-config\` command along with your Ethereum wallet address.\nFor example: \`-config 0x07CD6e5F4E7429313669146bb1c32a644cc600af\``)
-              msg.reply({ embeds: [embed] })
+                .setDescription(
+                  `${emoji["sadge"]} We are trying to send you some xsol but we couldn't find your Ethereum wallet address. Run \`-config\` command along with your Ethereum wallet address.\nFor example: \`-config 0x07CD6e5F4E7429313669146bb1c32a644cc600af\``
+                );
+              msg.reply({ embeds: [embed] });
             }
           });
-        }
-        else {
+        } else {
           const embed = new Discord.MessageEmbed()
             .setColor(theme["error"])
-            .setDescription(`${emoji["sadge"]} Found an unsupported file format`)
-          msg.reply({ embeds: [embed] })
+            .setDescription(
+              `${emoji["sadge"]} Found an unsupported file format`
+            );
+          msg.reply({ embeds: [embed] });
         }
-      }
-      else {
+      } else {
         const embed = new Discord.MessageEmbed()
           .setColor(theme["error"])
-          .setDescription(`${emoji["bonk"]} I need some kind of proof of work so that I can give you xsol`)
-        msg.reply({ embeds: [embed] })
+          .setDescription(
+            `${emoji["bonk"]} I need some kind of proof of work so that I can give you xsol`
+          );
+        msg.reply({ embeds: [embed] });
       }
-    }
-    else {
+    } else {
       const embed = new Discord.MessageEmbed()
         .setColor(theme["blurple"])
-        .setDescription(`\`-submit\` command can only be used in <#${constants["submitChannel"]}>`)
-      msg.reply({ embeds: [embed] })
+        .setDescription(
+          `\`-submit\` command can only be used in <#${constants["submitChannel"]}>`
+        );
+      msg.reply({ embeds: [embed] });
     }
-  }
+  },
 });

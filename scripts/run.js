@@ -1,8 +1,8 @@
 const main = async () => {
-  const contractFactory = await hre.ethers.getContractFactory('Integer');
+  const contractFactory = await hre.ethers.getContractFactory("Integer");
   const contract = await contractFactory.deploy();
   await contract.deployed();
-  console.log('Contract deployed to:', contract.address);
+  console.log("Contract deployed to:", contract.address);
 };
 
 const runMain = async () => {

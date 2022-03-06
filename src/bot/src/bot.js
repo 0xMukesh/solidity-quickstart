@@ -1,7 +1,7 @@
-const dotenv = require('dotenv')
+const dotenv = require("dotenv");
 
-const Client = require('./structures/client.structure.js')
-const ready = require('./loaders/ready.loader.js')
+const Client = require("./structures/client.structure.js");
+const ready = require("./loaders/ready.loader.js");
 
 dotenv.config();
 
