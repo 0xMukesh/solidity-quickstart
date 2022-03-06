@@ -16,6 +16,11 @@
   - [ ] Structs and arrays
 - [ ] Variables
 - [ ] Functions
---- 
 
-- [ ] Create a discord bot via which the users can submit their challenge submissions
+---
+
+### Discord bot
+
+- [x] Create a `-submit` command, by which the users can submit their submission for the challenges
+- [x] Create a `-config` command, by which the users can configure their Ethereum wallet address
+- [ ] Giveaway `xsol`'s as a reward on completing the challenge
