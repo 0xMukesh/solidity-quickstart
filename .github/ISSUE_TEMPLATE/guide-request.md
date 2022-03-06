@@ -3,8 +3,7 @@ name: "Guide request"
 about: Suggest a new guide idea for this project
 title: "[GUIDE]"
 labels: guide
-assignees: ''
-
+assignees: ""
 ---
 
 **What's the new guide about?**
