@@ -27,6 +27,5 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Copyright © 2022 [Kira](https://github.com/kira272921).
-
+Copyright © 2022 [Kira](https://github.com/kira272921). <br/>
 This project is [MIT](https://github.com/Kira272921/solidity-quickstart/blob/main/LICENSE) licensed.
