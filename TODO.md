@@ -16,3 +16,6 @@
   - [ ] Structs and arrays
 - [ ] Variables
 - [ ] Functions
+--- 
+
+- [ ] Create a discord bot via which the users can submit their challenge submissions
