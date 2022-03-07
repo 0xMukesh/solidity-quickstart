@@ -7,10 +7,6 @@ const userSchema = Schema({
     type: String,
     required: true,
   },
-  coins: {
-    type: Number,
-    default: 0,
-  },
   address: {
     type: String,
   },
