@@ -15,7 +15,7 @@ module.exports = (client) => {
   mongo(process.env.MONGODB_URL);
 
   fs.readdirSync(constants["commandDirectory"])
-    .filter((file) => file.endsWith(".js"))
+    .filter((file) => file.endsWith(".command.js"))
     .forEach((file) => {
       const command = require(`../commands/${file}`);
       console.log(`Command ${command.name} loaded!`);
@@ -26,7 +26,7 @@ module.exports = (client) => {
     });
 
   fs.readdirSync(constants["eventDirectory"])
-    .filter((file) => file.endsWith(".js"))
+    .filter((file) => file.endsWith(".events.js"))
     .forEach((file) => {
       const event = require(`../events/${file}`);
       client.on(event.name, (...args) => event.run(...args));
