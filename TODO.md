@@ -5,10 +5,9 @@
 - [x] Setting up developer environment
 - [x] Hello World
 - [ ] Data Types
-  - [ ] Integers
+  - [x] Integers
     - [x] Math operators
     - [x] Comparison operators
-    - [ ] Bit wise operators
   - [ ] Address
   - [ ] Arrays
     - [ ] Array operations

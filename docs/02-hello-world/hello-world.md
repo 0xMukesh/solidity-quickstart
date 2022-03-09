@@ -123,10 +123,12 @@ npx hardhat run scripts/run.js
 
 **TADA** 🎉! Congrats on writing and deploying your first ever smart contract
 
-# 🔗 Important links
+## ❤ Feedback
 
-- Example solidity file for this section: [`HelloWorld.sol`](https://github.com/Kira272921/solidity-quickstart/blob/main/contracts/02.%20Hello%20World/HelloWorld.sol)
+Faced any kinds of issues during this section? Head over to our [Discord server](https://discord.gg/d2wSzvZ6nj) and ask it in the [#help](https://discord.com/channels/945288689876082709/945542160814604306) channel.
 
-# 💪 Challenge
+👀 Don't forget to share your progress in [#share-your-progress](https://discord.com/channels/945288689876082709/945542086025936947) channel.
+
+## 💪 Challenge
 
 Create a smart contract which would console log `gm, wagmi` in the terminal. Take a screenshot of the output and submit it by using our discord bot's `-submit` command

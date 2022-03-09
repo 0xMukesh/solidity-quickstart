@@ -10,6 +10,6 @@ contract HelloWorld {
     }
 }
 
-// Challenge Question!
+// Challenge!
 
-// Create a new smart contract called GmWagmi.sol and console log "gm wagmi!"
+// Create a new smart contract called gm-wagmi.sol and console log "gm wagmi!"

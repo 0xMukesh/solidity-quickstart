@@ -186,3 +186,24 @@ The output of the comparison operators is always a boolean (either `true` or `fa
 | &&       | AND         |
 | \|\|     | OR          |
 | !        | NOT         |
+
+- `&&` would return `true` if both the arguments are `true` else `false`
+
+  ```solidity
+  console.log(true && true); // true
+  console.log(true && false); // false
+  ```
+
+- `||` would return `true` if either the arguments are `true` else `false`
+
+  ```solidity
+  console.log(true || false); // true
+  console.log(false || false); // false
+  ```
+
+- `!` returns `true` if the argument given is `false`, `false` is the argument given is `true`
+
+  ```solidity
+  console.log(!true); // false
+  console.log(!false); // true
+  ```

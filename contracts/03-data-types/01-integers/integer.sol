@@ -29,5 +29,13 @@ contract Integer {
         console.log("Greater than or equal to: %s", integerA >= integerB); // Greater than or equal to
         console.log("Less than: %s", integerA < integerB); // Less than
         console.log("Greater than: %s", integerA > integerB); // Greater than
+
+        // Conditional Operators
+
+        console.log(true && true); // true
+        console.log(true && false); // false
+
+        console.log(true || false); // true
+        console.log(false || false); // false
     }
 }
