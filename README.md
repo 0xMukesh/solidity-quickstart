@@ -4,7 +4,7 @@ Solidity Quickstart is an extensive solidity guide for the solidity newbies out 
 
 ## 🤔 How does it work?
 
-All the guides are present in the [`contracts`](https://github.com/Kira272921/solidity-quickstart/tree/main/contracts) folder. At the end of each guide, there is a small challenge, which you would be completing a submitting in our discord server. 👀 You would be getting free XSol's (XSol is our [X Days Of Solidity](https://twitter.com/hashtag/XDaysOfSolidity) cryptocurrency)
+All the guides related to Solidity are present in the [`docs`](https://github.com/Kira272921/solidity-quickstart/tree/main/docs) folder and all the example code for these guides are present in the [`contracts`](https://github.com/Kira272921/solidity-quickstart/tree/main/contracts) folder. At the end of each guide, their is a challenge, which you would be completing it and submitting it using our discord bot. If you have submitted the challenge, you would be getting 1 XSol.
 
 ## 👨‍💻 Authors
 
