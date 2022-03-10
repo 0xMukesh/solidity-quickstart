@@ -28,7 +28,7 @@ We would mention your solidity version using `pragma` keyword.
 pragma solidity ^0.8.12;
 ```
 
-In solidity, we don’t have an in-built console.log (Solidity used have a [low-level interface to logs](https://docs.soliditylang.org/en/v0.4.21/contracts.html#low-level-interface-to-logs) 👀) but hardhat has made one. To use console.log in solidity, you would have to first import "[hardhat/console.sol](https://github.com/NomicFoundation/hardhat/blob/master/packages/hardhat-core/console.sol)", which gives us the superpowers to use console.log in solidity.
+In solidity, we don’t have an in-built console.log (Solidity used to have a [low-level interface to logs](https://docs.soliditylang.org/en/v0.4.21/contracts.html#low-level-interface-to-logs) 👀) but hardhat has made one. To use console.log in solidity, you would have to first import "[hardhat/console.sol](https://github.com/NomicFoundation/hardhat/blob/master/packages/hardhat-core/console.sol)", which gives us the superpowers to use console.log in solidity.
 
 Let's import "[hardhat/console.sol](https://github.com/NomicFoundation/hardhat/blob/master/packages/hardhat-core/console.sol)" by using the import statement (👀 _python vibes_)
 
@@ -36,7 +36,7 @@ Let's import "[hardhat/console.sol](https://github.com/NomicFoundation/hardhat/b
 import "hardhat/console.sol";
 ```
 
-Let's create a mew contract by using the `contract` keyword followed by the contract's name.
+Let's create a new contract by using the `contract` keyword followed by the contract's name.
 
 ```solidity
 // SPDX-License-Identifier: MIT
